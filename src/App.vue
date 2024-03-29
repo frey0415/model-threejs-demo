@@ -32,7 +32,7 @@ const handle3DFileChange = ({ raw }) => {
       <ThreeView
           v-if="modelFileType=='gltf' || modelFileType=='obj' || modelFileType=='fbx'"
           :modelUrl="modelUrl" :autoRotate="false" />
-      <img v-else src=";" alt="不支持预览的模型格式，如要预览，请尝试将其转换为gltf/obj/fbx格式。">
+      <img v-else src="" alt="不支持预览的模型格式，如要预览，请尝试将其转换为gltf/obj/fbx格式。">
     </div>
     <el-upload
         class="avatar-uploader"
